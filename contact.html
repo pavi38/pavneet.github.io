@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06 - Cameras</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./nav.css">
+</head>
+<body>
+    <div class="navbar">
+        <a  href="index.html">Home</a>
+        <a  href="education.html">Education</a>
+        <a href="work.html">Work</a>
+        <a class="active" href="cv.html">CV</a>
+        <a href="skills.html">skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">contact me</a>
+    </div>
+    <div class="contact-container">
+        <form name = "emailForm" action="" class="contact-l" >
+            <div class="contact-title">
+                <h2>Email Me</h2>
+                <hr>
+            </div>
+            <input type="text" name="name" placeholder="Your Name" class="contact-input"  id="name" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-input" id ="email" required>
+            <textarea name="message" class="contact-input" placeholder="Your message" id="message" required></textarea>
+            <button type="submit" id="formbuttn">submit</button>        
+        </form>
+        <div class="contact-r">
+            <img src="email-marketing-8.png" alt="Email" style="height: 99vh; width: 45vw;">
+        </div>
+    </div>
+
+    <script type="module" src="./contact.js"></script>
+    <script type="module" src="./message.js"></script>
+</body>
+</html>

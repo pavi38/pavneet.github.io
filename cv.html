@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+    <style>
+        .pdf-link{
+            font-size: 30px;
+            font-family: "Roboto", sans-serif;
+            position: sticky;
+            position: -webkit-sticky;
+            margin-top: 100px;
+            top: 20px;
+            text-decoration: none;
+            color: #ff88cc;
+            border: 2px solid #ff88cc;
+            border-radius: 50px;
+            padding: 15px;
+            transition: all 300ms ease-in-out;
+        }
+        .pdf-link:hover{
+            border: 2px solid white;
+            background: linear-gradient(100deg, rgba(229,214,99,1) 28%, rgba(255,136,204,1) 53%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a  href="index.html">Home</a>
+        <a  href="education.html">Education</a>
+        <a href="work.html">Work</a>
+        <a class="active" href="cv.html">CV</a>
+        <a href="skills.html">skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">contact me</a>
+    </div>
+    <div class="content">
+        <a class="pdf-link" href="myresume.pdf" target="_blank">PDF Version</a>
+    </div>
+    <div class="content" style="text-align: center;">
+        <h1>Education</h1>
+        <h2>degree</h2>
+        <p><span style="color: rgba(229,214,99,1)">2024</span> BS Computer Science, University of Missouri Kansas City
+        <br>
+        <span>GPA:</span> 3.9
+        </p>
+    </div>
+    <div class="content" style="text-align: center;">
+        <h1>skills</h1>
+        <ul>
+            <li style="margin-right: 160px;"><span>Languages:</span><span style="margin-left: 50px; color: black;">Java, Python, Javascript, c#, racket, swift, c++</span></li>
+            <li style="margin-right: 390px;"><span>Web Framework:</span><span style="margin-left: 50px; color: black;">Django, spring-boot</span></li>
+            <li style="margin-right: 400px;"><span>Tools</span><span style="margin-left: 50px; color: black;">Github, AWS, vercel, firebase</span></li>
+            <li><span>Soft Skills:</span></span><span style="margin-left: 50px; color: black;">Time Management, Teamwork, Problem Solving, Accountability</span></li>
+        </ul>
+    </div>
+    <div class="content" style="text-align: center;">
+    <h1>Extra-Curricular Activities</h1>
+    <ul>
+        <li>soccer</li>
+        <li>video games
+        </li>
+    </ul>
+    </div>
+</body>
+</html>
