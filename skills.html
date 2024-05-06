@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="./nav.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a  href="index.html">Home</a>
+        <a  href="education.html">Education</a>
+        <a href="work.html">Work</a>
+        <a  href="cv.html">CV</a>
+        <a class="active" href="skills.html">skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">contact me</a>
+    </div>
+    <div class="container">
+        <section>
+            <div class="skilljava">
+                <div class="skill">
+                    <p>Java</p>
+                    <div class="skill-bar skill1" data-precent="90%">
+                        <span class="skill-count1">95%</span>
+                    </div>
+                </div>
+                <p class="skilldis"><span>Framework:</span> Java Spring<br> <span>GUI library:</span> Java swing<br><br> <span>Experience:</span>
+                    <ul>
+                        <li>Experience with web scraping and crawling library like JSoup</li>
+                        <li>Experience with Junit test and integrated testing.</li></ul>
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="skilljava">
+            <div class="skill">
+                <p>Javascript</p>
+                <div class="skill-bar skill1" data-precent="85%">
+                    <span class="skill-count1">85%</span>
+                </div>
+            </div>
+            <p class="skilldis"><span>Framework:</span>Angular<br> <span>GUI library:</span>React, Three.js<br><br> <span>Experience:</span>
+                <ul>
+                    <li>Experience working with 3D graphics</li>
+                    <li>Experience with parallax</li></ul>
+            </p>
+        </div>
+        </section>
+        <section>
+            <div class="skilljava">
+            <div class="skill">
+                <p>Python</p>
+                <div class="skill-bar skill1" data-precent="75%">
+                    <span class="skill-count1">75%</span>
+                </div>
+            </div>
+            <p class="skilldis"><span>Framework:</span>Django<br> <span>GUI library:</span>tkinter<br><br> <span>Experience:</span>
+                <ul>
+                    <li>Experience with web APIs</li>
+                    <li>Experience with image Processing</li></ul>
+            </p>
+        </div>
+        </section>
+        <section>
+            <div class="skilljava">
+            <div class="skill">
+                <p>C++</p>
+                <div class="skill-bar skill1" data-precent="65%">
+                    <span class="skill-count1">65%</span>
+                </div>
+            </div>
+            <p class="skilldis"><span>Framework:</span> N/A<br> <span>GUI library:</span> N/A<br><br> <span>Experience:</span>
+                <ul>
+                    <li>Experience with pointers</li>
+                    <li>Experience with data structures</li></ul>
+            </p>
+        </div>
+            </section>
+            <section>
+                <div class="skilljava">
+                <div class="skill">
+                    <p>Racket</p>
+                    <div class="skill-bar skill1" data-precent="80%">
+                        <span class="skill-count1">80%</span>
+                    </div>
+                </div>
+                <p class="skilldis"><span>Framework:</span> n/a<br> <span>GUI library:</span> n/a<br><br> <span>Experience:</span>
+                    <ul>
+                        <li>Experience with DSL</li>
+                        <li>Experience with monads</li></ul>
+                </p>
+            </div>
+            </section>
+    </div>
+    <script>
+        const config = {
+            root: null, // Sets the framing element to the viewport
+            rootMargin: "0px",
+            threshold: 1
+        }
+        const bars = document.querySelectorAll(".skill1")
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.width = entry.target.dataset.precent
+                }
+                console.log(entry)
+            })
+        }, config);
+
+        bars.forEach(bar => {
+            observer.observe(bar);
+        })
+    </script>
+</body>
+
+</html>
